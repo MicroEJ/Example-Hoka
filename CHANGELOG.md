@@ -5,12 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 2.0.0 - RC
+## 2.0.0-RC - 2019-12-18
 
 ### Added
 
   - Merge REST example
-  - Merge authentication example
+  - Merge authentication example into the access control example
+  - Add authorization to the access control example
+  - Add slow network (cache + compression) example
 
 ### Changed
 

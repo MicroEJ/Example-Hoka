@@ -4,7 +4,7 @@
  * Copyright 2019 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
-package com.microej.example.hoka.rest.acl;
+package com.microej.example.hoka.accesscontrol;
 
 import java.io.IOException;
 import java.util.Map;
@@ -23,7 +23,7 @@ import ej.hoka.http.support.MIMEUtils;
 import ej.hoka.rest.RestEndpoint;
 import ej.hoka.rest.RestRequestHandler;
 
-public class AuthenticationExampleServer {
+public class AccessControlExampleServer {
 
 	public static void main(String[] args) throws IOException {
 		SessionAuthenticator sessionAuthenticator = new SessionAuthenticator();
@@ -41,10 +41,9 @@ public class AuthenticationExampleServer {
 		RestAuthenticatedRequestHandler privateHandler = new RestAuthenticatedRequestHandler(sessionAuthenticator,
 				"/api/private/");
 		RestEndpoint endpoint = new HelloEndpoint("/api/private/*", acl);
+		acl.addPermission("admin", endpoint, "get", "post"); // User "admin" can access the endpoint with GET and POST
+		acl.addPermission("user", endpoint, "get"); // User "user" can only access the endpoint with GET
 		privateHandler.addEndpoint(endpoint);
-
-		acl.addPermission("admin", endpoint, "get", "post");
-		acl.addPermission("user", endpoint, "get");
 
 		// Start the server with the two REST request handlers
 

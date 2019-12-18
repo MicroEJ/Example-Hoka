@@ -4,7 +4,7 @@
  * Copyright 2019 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
-package com.microej.example.hoka.rest.acl;
+package com.microej.example.hoka.accesscontrol;
 
 import java.util.Map;
 

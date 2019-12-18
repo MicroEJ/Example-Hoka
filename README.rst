@@ -92,8 +92,8 @@ Usage
 #. Refresh the page by pressing ``ENTER`` in the URL bar (refresh button will
    disable the cache for the request) and look at the Hoka logs : the image is
    not requested again (because it was cached by the browser).
-#. Edit the file `index.html <filesystem/hoka/index.html>`__ and change the image
-   source to ``png/microej.v2.png``.
+#. Edit the file `index.html <filesystem/hoka/index.html>`__ and change the
+   image source to ``png/microej.v2.png``.
 #. Go to `localhost:8080 <http://localhost:8080>`__ again, you should see the
    `microej.v2.png <filesystem/hoka/png/microej.v2.png>`__ image.
 #. Refresh the page by pressing ``ENTER`` in the URL bar (refresh button will

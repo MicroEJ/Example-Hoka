@@ -26,6 +26,6 @@
 	<dependencies>
 		<dependency org="ej.api" name="edc" rev="1.2.3"/>
 		
-		<dependency org="ej.library.iot" name="hoka" rev="7.0.1"/>
+		<dependency org="ej.library.iot" name="hoka" rev="7.1.0"/>
 	</dependencies>
 </ivy-module>

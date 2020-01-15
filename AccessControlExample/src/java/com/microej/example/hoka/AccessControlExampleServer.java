@@ -7,6 +7,7 @@
 package com.microej.example.hoka;
 
 import java.io.IOException;
+import java.security.SecureRandom;
 import java.util.Map;
 
 import ej.authz.acl.AccessControlList;
@@ -26,7 +27,7 @@ import ej.hoka.rest.RestRequestHandler;
 public class AccessControlExampleServer {
 
 	public static void main(String[] args) throws IOException {
-		SessionAuthenticator sessionAuthenticator = new SessionAuthenticator();
+		SessionAuthenticator sessionAuthenticator = new SessionAuthenticator(new SecureRandom());
 		AccessControlList acl = new AccessControlList();
 
 		// Create a request handler responsible of handling request to public endpoints

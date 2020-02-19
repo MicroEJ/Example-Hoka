@@ -1,7 +1,7 @@
 /*
  * Java
  *
- * Copyright 2019 MicroEJ Corp. All rights reserved.
+ * Copyright 2019-2020 MicroEJ Corp. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be found with this software.
  */
 package com.microej.example.hoka;
@@ -17,8 +17,8 @@ import ej.hoka.rest.RestEndpoint;
 
 public class HelloEndpoint extends RestEndpoint {
 
-	private static final HTTPResponse ACCESS_FORBIDDEN = HTTPResponse
-			.createResponseFromStatus(HTTPConstants.HTTP_STATUS_FORBIDDEN);
+	private static final HTTPResponse ACCESS_FORBIDDEN = new HTTPResponse(HTTPConstants.HTTP_STATUS_FORBIDDEN,
+			MIMEUtils.MIME_PLAINTEXT, "Access Forbidden.");
 
 	private final AccessControlList acl;
 

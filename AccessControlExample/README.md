@@ -11,7 +11,7 @@ This example [AccessControlExampleServer](src/java/com/microej/example/hoka/Acce
 5.  Go to [/api/logout](http://localhost:8080/api/logout).
 6.  Go back to [/api/private](http://localhost:8080/api/private), you are, again, not authenticated.
 7.  Go to [/api/login?username=guest](http://localhost:8080/api/login?username=guest) to login as "guest".
-8.  Go back to [/api/private](http://localhost:8080/api/private), this time you should be able to pass the authentication (check cookies) but not the authorization check (Error 503 Access Forbidden).
+8.  Go back to [/api/private](http://localhost:8080/api/private), this time you should be able to pass the authentication (check cookies) but not the authorization check (Error 403 Access Forbidden).
 
 # Requirements
 
@@ -32,5 +32,5 @@ N.A.
 None.
 
 ---
-_Copyright 2019 MicroEJ Corp. All rights reserved._
+_Copyright 2019-2020 MicroEJ Corp. All rights reserved._
 _Use of this source code is governed by a BSD-style license that can be found with this software._

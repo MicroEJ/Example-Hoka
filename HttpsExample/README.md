@@ -12,9 +12,13 @@ This example shows how to enable HTTPS on the Hoka web server.
 
 # Requirements
 
-This library requires the following Foundation Libraries:
+This example has been tested on
 
-    @FOUNDATION_LIBRARIES_LIST@
+- MicroEJ SDK 5.1
+- With a ESP ESP32WROVER platform that contains :
+    - EDC-1.3
+    - NET-1.1
+    - SSL-2.1
 
 # Dependencies
 
@@ -29,5 +33,5 @@ N.A.
 None.
 
 ---
-_Copyright 2019 MicroEJ Corp. All rights reserved._
+_Copyright 2019-2020 MicroEJ Corp. All rights reserved._
 _Use of this source code is governed by a BSD-style license that can be found with this software._

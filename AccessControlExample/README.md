@@ -15,9 +15,14 @@ This example [AccessControlExampleServer](src/java/com/microej/example/hoka/Acce
 
 # Requirements
 
-This library requires the following Foundation Libraries:
+This example has been tested on
 
-    @FOUNDATION_LIBRARIES_LIST@
+- MicroEJ SDK 5.1
+- With a ESP ESP32WROVER platform that contains :
+    - EDC-1.3
+    - NET-1.1
+    - SSL-2.2
+    - SECURITY-1.3
 
 # Dependencies
 

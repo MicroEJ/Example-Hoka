@@ -21,7 +21,6 @@ This example has been tested on
 - With a ESP ESP32WROVER platform that contains :
     - EDC-1.3
     - NET-1.1
-    - SSL-2.2
     - SECURITY-1.3
 
 # Dependencies
